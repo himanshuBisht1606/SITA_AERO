@@ -1,0 +1,6 @@
+C:\Users\himanshu.b.bisht\Desktop\Sita_Assignment\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\himanshu.b.bisht\Desktop\Sita_Assignment\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\himanshu.b.bisht\Desktop\Sita_Assignment\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\himanshu.b.bisht\Desktop\Sita_Assignment\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\himanshu.b.bisht\Desktop\Sita_Assignment\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\himanshu.b.bisht\Desktop\Sita_Assignment\BusinessLayer\obj\Debug\BusinessLayer.pdb

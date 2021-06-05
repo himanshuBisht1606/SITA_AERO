@@ -1,0 +1,33 @@
+﻿@model BusinessLayer.Model.Plans
+
+<table id="plan">
+    <tr>
+        <th>Sender Name</th>
+        <th>CC Number</th>
+        <th>Receipient Name</th>
+        <th>Weight(in Kg)</th>
+        <th>Value(€)</th>
+        <th>Signed Off By</th>
+        <th>Handled By</th>
+    </tr>
+    @foreach (var plan in Model.Plan)
+    {
+    <tr>
+        <td>@plan.SenderName</td>
+        <td>@plan.CCNumber</td>
+        <td>@plan.ReceipientName</td>
+        <td>@plan.Weight</td>
+        <td>@plan.Value</td>
+        @if (plan.SignedOffDepartment.Length > 0)
+        {
+            <td class="bold">@plan.SignedOffDepartment</td>
+        }
+        else
+        {
+            <td></td>
+        }
+
+        <td class="bold">@plan.HandledBy</td>
+    </tr>
+    }
+</table>

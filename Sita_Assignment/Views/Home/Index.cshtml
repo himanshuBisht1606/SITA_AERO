@@ -1,0 +1,42 @@
+﻿<div>
+    @Html.TextBox("file", "", new { @class = "upload", type = "file", id = "FileUpload1", @accept = "text/xml" })<br />
+    <input type="button" value="Upload" id="btnUpload" />
+    <div id="plandiv">
+
+    </div>
+    @ViewBag.Message
+</div>
+<link href="~/Content/css/style.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#btnUpload').click(function () {
+            if (window.FormData != undefined) {
+                var fileUpload = $('#FileUpload1').get(0);
+                var files = fileUpload.files;
+                var fileData = new FormData();
+                for (var i = 0; i < files.length; i++) {
+                    fileData.append(files[i].name, files[i]);
+                }
+                $.ajax({
+                    url: '/Home/UploadXmlFile',
+                    type: 'POST',
+                    contentType: false,
+                    processData: false,
+                    data: fileData,
+                    success: function (result) {
+                        $('#plandiv').html('');
+                        $('#plandiv').append(result);
+                    },
+                    error: function (err) {
+                        alert("File Upload Failed");
+                    }
+                });
+            } else {
+                alert("formData is not supported");
+            }
+        });
+    });
+    
+</script>
+
