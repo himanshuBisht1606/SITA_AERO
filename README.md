@@ -5,7 +5,7 @@
  * Solid Principle Implemented: Yes
  * Visual Studio Version Needed : VS 2013 Or Higher
  
- Demonstration:
+<b> Demonstration:</b>
  
  * Open the application in visual studio 2013 or Higher
  * Run the application.
@@ -24,7 +24,7 @@
  * If any error occured in above process, code will execute catch block of "UploadXmlFile" and html alert will shown on UI saying error occured.
  * If user directly click on Upload button without selecting any file in file uploader, one msg saying that "No file selected. Please choose xml file from file uploader" is displayed on UI
  
- Dependency Injection Implementation:
+ <b>Dependency Injection Implementation:</b>
  
  * Install NInject.mvc package from nuget package manager.
  * It will create NinjectWebCommon.cs file under app_Start folder.
@@ -35,7 +35,7 @@
  * Inject ParcelBAL class dependency on home controller constructor level by creating instance of interface IParcel.
  * Calling methods of ParcelBAL by using instance of interface IParcel.
  
- Factory Design Pattern Implementation:
+ <b>Factory Design Pattern Implementation:</b>
  
  * Create DepartmentProduct Abstract class and create 3 abstract property on it.
  * Create 3 Concrete Product class who inherit abstract product class DepartmentProduct . Name of these 3 concrete Product class mentioned below:
@@ -50,7 +50,7 @@
 	
  * At the end create object of Concrete Creator  class object at run time based on parcel weight in "GeneratePlannedData" method of parcelBAL.cs class.
  
- Adding or removing a department:
+ <b>Adding or removing a department:</b>
  
  * For Adding another department, we just need to create concrete product class for new department and inherit it into abstract product class i.e. DepartmentProduct.
  Then we need to create Concrete creator class for new department and inherit it into creator abstract class i.e. DepartmentFactory.cs
