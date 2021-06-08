@@ -17,7 +17,7 @@
  * In "GeneratePlannedData" business logic will execute based on below scenerios.
 	1) Parcels with a weight up to 1 kg are handled by the "Mail" departement.
 	2) Parcels with a weight up to 10 kg are handled by the "Regular" department.
-	3)Parcels with a weight over 10 kg are handled by the "Heavy" department.
+	3) Parcels with a weight over 10 kg are handled by the "Heavy" department.
 	4) Parcels with a value of over € 1000,- need to be signed off by the "Insurance" department, before being processed by Mail, Regular or Heavy department.
  * once Planned Data will generate based on above mentioned business cases, controller will called "_plan" partial view, where I had written html table code for showing parcel data on UI.
  * Once response generated from partial view render, it will call success method of ajax function and append partial view html into div and show html table on UI.
