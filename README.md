@@ -19,7 +19,7 @@
 	2) Parcels with a weight up to 10 kg are handled by the "Regular" department.
 	3) Parcels with a weight over 10 kg are handled by the "Heavy" department.
 	4) Parcels with a value of over € 1000,- need to be signed off by the "Insurance" department, before being processed by Mail, Regular or Heavy department.
- * once Planned Data will generate based on above mentioned business cases, controller will called "_plan" partial view, where I had written html table code for showing parcel data on UI.
+ * Once Planned Data will generate based on above mentioned business cases, controller will called "_plan" partial view, where I had written html table code for showing parcel data on UI.
  * Once response generated from partial view render, it will call success method of ajax function and append partial view html into div and show html table on UI.
  * If any error occured in above process, code will execute catch block of "UploadXmlFile" and html alert will shown on UI saying error occured.
  * If user directly click on Upload button without selecting any file in file uploader, one msg saying that "No file selected. Please choose xml file from file uploader" is displayed on UI
@@ -29,7 +29,7 @@
  * Install NInject.mvc package from nuget package manager.
  * It will create NinjectWebCommon.cs file under app_Start folder.
  * Create NinjectResolver.cs class under app_start folder and implement IDependencyResolver interface on it.
- *Implement all the methods of IDependencyResolver in NinjectResolver.cs class and add class and interface binding in AddBindings method as mentioned below:
+ * Implement all the methods of IDependencyResolver in NinjectResolver.cs class and add class and interface binding in AddBindings method as mentioned below:
 	this._kernel.Bind<IParcel>().To<ParcelBAL>();
  * Register NinjectResolver in application_Start method of global.asax.cs class.
  * Inject ParcelBAL class dependency on home controller constructor level by creating instance of interface IParcel.
